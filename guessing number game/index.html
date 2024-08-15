@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+</head>
+<body>
+    <script>
+        var numberOfWins = 0;
+        var numberOfLosses = 0;
+
+        for (var i = 1; i <= 5; i++) {
+            var guessNumber = parseInt(prompt("Enter a guess number from 1 to 5:"));
+            var randomNumber = Math.floor(Math.random() * 5) + 1;
+            
+            document.write("Random number was: " + randomNumber + "<br>");
+            
+            if (randomNumber === guessNumber) {
+                numberOfWins++;
+                document.write("You have won!<br><br>");
+            } else {
+                numberOfLosses++;
+                document.write("You have lost.<br><br>");
+            }
+        }
+
+        document.write("You have won " + numberOfWins + " out of 5 chances.<br>");
+        document.write("You have lost " + numberOfLosses + " out of 5 chances.");
+    </script>
+</body>
+</html>
