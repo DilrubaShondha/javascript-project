@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vowel or consonant</title>
+</head>
+<body>
+    <script>
+        var letter = prompt("Enter a letter: ");
+        letter = letter.toLowerCase();
+        document.write("Your letter is:" +" "+ letter  + "<br>");
+        if(letter == "a" ||
+           letter == "e" ||
+           letter == "i" ||
+           letter == "o" ||
+           letter == "u"
+        )
+        {
+            document.write("You have picked vowel letter because " + letter +" "+ "is vowel." + "<br>" );
+        }
+        else{
+            document.write("You have picked consonant letter because "+" "+ letter +" "+ "is consonant." );
+        }
+    </script>
+</body>
+</html>
