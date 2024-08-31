@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Indicator</title>
+</head>
+<body>
+   <script>
+        var height = parseFloat(prompt("Enter Your Height in meter:"));
+        var weight = parseFloat(prompt("Enter Your weight  in KG :"));
+        var bmi = weight / (height)**2;              
+        if (bmi < 18.5 ){
+            document.write("You are underweight");
+        }
+        else if (bmi < 24.9 ){
+            document.write("You are normal");
+        }
+        else if (bmi < 29.9 ){
+            document.write("You are underweight");
+        }
+        else {
+            document.write("You are obese");
+        }
+   </script> 
+</body>
+</html>
