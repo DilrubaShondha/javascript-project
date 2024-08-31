@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Competitor</title>
+</head>
+<body>
+<script>
+    var marks = parseInt(prompt("Enter Your marks:"));
+    var fMarks = parseInt(prompt("Enter Your marks:"));
+    if(marks>= 80){
+        if (fMarks >= 80 ){
+            document.write("Go for lunch");
+        }
+        else if (fMarks<=80 && fMarks >= 60){
+            document.write("good luck next time.");
+        }
+        else if (fMarks<=60 && fMarks >= 40 ){
+            document.write("keep your friend's message unseen");
+        }
+        else {
+            document.write("block your friend");
+        }
+    }
+    else {
+        document.write("go to home and sleep and act sad");
+    }
+</script> 
+</body>
+</html>
