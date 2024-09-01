@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ticket Fare</title>
+</head>
+<body>
+<script>
+ var age = 15;
+ ticketFare = 800;
+
+ if (age < 10){
+    ticketFare = 0;
+ }
+ if (age < 18){
+    ticketFare = ticketFare - (ticketFare * 50) / 100;
+ }
+ else if (age < 60){
+    ticketFare = ticketFare - (ticketFare * 15) / 100;
+ }
+ else{
+    ticketFare = 800;
+ }
+ document.write("Ticket fare:" + ticketFare);
+</script>
+</body>
+</html>
