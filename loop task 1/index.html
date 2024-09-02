@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>loop task 3</title>
+    <title>loop task 4</title>
 </head>
 <body>
     <script>
-        let i = 1;
-        for(i=1;i < 100;i++){
-            if(Number.isInteger(Math.sqrt(i)))
+        for(let i=1; i<40; i++){
+            if(i % 2 == 1){
+                continue;
+            }
             document.write(i +"<br>");
             }
-
     </script>
 </body>
 </html>
