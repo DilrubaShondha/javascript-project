@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop task 7</title>
+</head>
+<body>
+    <script>
+        sum = 0;
+        for(let i=91; i<=129; i++){
+            if(i % 2==0){
+                continue;
+            }
+            sum = sum + i;
+            }
+            document.write("Subtask-1 answer:" + sum + "<br>");
+            sum=0;
+            for(let i=51; i<=85; i++){
+                if(i % 2==1){
+                    continue;
+                }
+                sum = sum + i;
+                }
+                document.write("Subtask-2 answer:" + sum );
+    </script>
+</body>
+</html>
