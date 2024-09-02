@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>loop task 6</title>
+    <title>loop task 7</title>
 </head>
 <body>
     <script>
-        for(let i=1; i<=60; i++){
-            document.write("I will invest at least 6 hrs every single day for next 60 days!" +" " + "loop number" + i + "<br>");
+        for(let i=61; i<=100; i++){
+            if(i % 2==0){
+                continue;
+            }
+            document.write( i + "<br>");
             }
     </script>
 </body>
