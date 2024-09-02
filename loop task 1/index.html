@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>loop task 1</title>
+    <title>loop task 2</title>
 </head>
 <body>
     <script>
-        for(let a=1; a<200; a++){
-            if(a === 100){
+        let num = 1;
+        let sum = 0;
+        while(true){
+            sum = sum + num;
+            if(sum >= 100){
                 break;
             }
-            document.write(a + "<br>");
+            num++;
         }
+        document.write(num +"<br>");
+        document.write(sum);
+
     </script>
 </body>
 </html>
