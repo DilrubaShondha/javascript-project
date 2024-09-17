@@ -16,4 +16,4 @@ const student = {
         }
     }
 }
-student.act();
+console.log(student.car.manufacturer.CEO)
