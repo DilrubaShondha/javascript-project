@@ -13,12 +13,11 @@
         //add event listener to the post button
         document.getElementById('delete-confirm').addEventListener('keyup', function(){
             const text = event.target.value;  
-            const deleteButton = document.getElementById('btn-dlt');
             if(text === 'delete'){
-                deleteButton.removeAttribute('disabled');
+                document.getElementById('btn-dlt').removeAttribute('disabled');
             }
             else{
-                deleteButton.setAttribute('disabled', true);
+                document.getElementById('btn-dlt').setAttribute('disabled', true);
             }
         })
         document.getElementById('btn-dlt').addEventListener('click', function(){
