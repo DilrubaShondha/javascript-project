@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Dom</title>
+</head>
+<body>
+    <h1>final dom</h1>
+    <p id="input-text-display">hi</p>
+    <h3 id="handler-status">Default text</h3>
+    <button onclick="handleOnClick()">handle event by onclick element</button>
+    <button id="event-listener">handle event by add event listener element</button>
+    <input id="input-field" type="text">
+    <button id="btn-update">update</button>
+
+    <script>
+        function handleOnClick(){
+            document.getElementById('handler-status').innerText = 'Hlw Shondha';
+        }
+        document.getElementById('event-listener').addEventListener('click', function(){
+            document.getElementById('handler-status').innerText ='text updated'
+        })
+        document.getElementById('btn-update').addEventListener('click', function(){
+            const input = document.getElementById('input-field').value ;
+
+            const p = document.getElementById('input-text-display');
+            p.innerText =input;
+            input-field.value ='';
+        })
+    </script>
+</body>
+</html>
